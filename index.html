@@ -376,16 +376,71 @@
               </li>
             </ul>
           </div>
+          <form action="#" name="email" class="footer-form">
+            <label for="#" class="footer-label"
+              >Подпишитесь на рассылку
+              <input type="email" class="footer-input" placeholder="E-mail" />
+            </label>
+            <button type="submit" class="footer-submit">
+              Подписаться
+              <svg class="footer-icon" width="24" height="24">
+                <use href="./images/symbol-defs2.svg#footer-icon"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg class="modal-icon" width="11" height="11">
+          <svg width="11" height="11">
             <use href="./images/symbol-defs.svg#modal-vector"></use>
           </svg>
         </button>
+        <div class="modal-padding">
+          <p class="modal-text">Оставьте свои данные, мы вам перезвоним</p>
+          <form action="#" name="name" class="modal-form">
+            <label for="#" class="modal-name-label modal-label"
+              >Имя
+              <span class="input-wrapper">
+                <input type="text" class="modal-name-input modal-input" />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#modal-name"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label for="#" class="modal-tel-label modal-label"
+              >Телефон
+              <span class="input-wrapper">
+                <input type="tel" class="modal-tel-input modal-input" />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#modal-tel"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label for="#" class="modal-email-label modal-label">
+              Почта
+              <span class="input-wrapper">
+                <input type="email" class="modal-email-input modal-input" />
+                <svg class="modal-icon" width="18" height="18">
+                  <use href="./images/symbol-defs.svg#modal-email"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label for="#" class="modal-comment-label modal-label">
+              Комментарий
+              <textarea
+                name="modal-comment"
+                class="modal-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
