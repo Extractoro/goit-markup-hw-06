@@ -384,7 +384,7 @@
             <button type="submit" class="footer-submit">
               Подписаться
               <svg class="footer-icon" width="24" height="24">
-                <use href="./images/symbol-defs2.svg#footer-icon"></use>
+                <use href="./images/symbol-defs.svg#footer-icon"></use>
               </svg>
             </button>
           </form>
@@ -394,7 +394,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-button" type="button" data-modal-close>
-          <svg width="11" height="11">
+          <svg class="modal-cross" width="11" height="11">
             <use href="./images/symbol-defs.svg#modal-vector"></use>
           </svg>
         </button>
@@ -404,7 +404,7 @@
             <label for="#" class="modal-name-label modal-label"
               >Имя
               <span class="input-wrapper">
-                <input type="text" class="modal-name-input modal-input" />
+                <input type="text" class="modal-name-input modal-input" required />
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#modal-name"></use>
                 </svg>
@@ -414,7 +414,7 @@
             <label for="#" class="modal-tel-label modal-label"
               >Телефон
               <span class="input-wrapper">
-                <input type="tel" class="modal-tel-input modal-input" />
+                <input type="tel" class="modal-tel-input modal-input" required />
                 <svg class="modal-icon" width="18" height="18">
                   <use href="./images/symbol-defs.svg#modal-tel"></use>
                 </svg>
@@ -439,6 +439,16 @@
                 placeholder="Введите текст"
               ></textarea>
             </label>
+            <input type="checkbox" class="modal-checkbox vis-hidden" id="modal-checkbox" />
+            <label for="modal-checkbox" class="label-checkbox">
+              <span>
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./images/symbol-defs.svg#checkmark"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&#160; <a href="#">Условия договора</a></label
+            >
+            <button type="submit" class="btn modal-btn">Отправить</button>
           </form>
         </div>
       </div>
